@@ -54,6 +54,13 @@ article button{
 .center{
   margin: 0 auto;
 }
+.spread{
+  overflow:auto;
+  display:flex;
+}
+.spread>*{
+  flex-grow:1;
+}
 /*navigation panel*/
 nav {
   background-color: #C12127;
@@ -160,7 +167,7 @@ nav {
 #section4 a{
   color:rgb(208, 74, 73);
 }
-#features div{
+#features .spread div{
   margin: 0 2.5px;
   width:calc(30% - 5px);
   padding: 20px 40px;
