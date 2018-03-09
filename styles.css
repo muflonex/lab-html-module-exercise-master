@@ -1,0 +1,170 @@
+/*native tags adjustments*/
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+  font-size:1.1em;
+}
+section, article{
+  overflow:auto;
+}
+section{
+  color:white;
+  width:100%;
+}
+article{
+  margin: 100px auto 100px auto;
+  width: 80%;
+}
+a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+h1{
+  font-size: 3em;
+  font-weight:500;
+  margin: 0 0 10px 0;
+}
+h2{
+  width:90%;
+  font-size: 2em;
+  font-weight:300;
+  margin-bottom: 0;
+}
+h3{
+  color:rgb(83, 88, 98);
+  padding: 10px 0;
+}
+article button{
+  border:none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  color:white;
+  font-size:1.1em;
+}
+/*pseudo-Bootstrap*/
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+.center{
+  margin: 0 auto;
+}
+/*navigation panel*/
+nav {
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding: 15px;
+}
+/*top search bar*/
+.top-links {
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#top-bar{
+  display:flex;
+  padding: 10px 0;
+}
+#top-bar>*{
+  margin: 0 10px;
+}
+#top-bar label{
+  display:flex;
+  flex-grow:1;
+}
+#top-bar label>*{
+  height: 50px;
+  float:left;
+}
+#top-bar input{
+  flex-grow:1;
+  padding: 0 15px;
+}
+#top-bar input, #top-bar button{
+  background-color: rgb(31,82,111);
+  border: 1px rgb(72,117,141) solid;
+  color: rgb(113,116,116);
+}
+/*search bar logos*/
+#bear-logo, #npm-logo, #search{
+  height:50px;
+}
+/*search bar log in flow*/
+.log{
+  display:flex;
+  line-height:50px;
+}
+.log span{
+  padding: 0 6px;
+  color: rgba(255,255,255,0.8);
+}
+/*section general considerations*/
+#intro button{
+  background-color:rgb(240,146,51);
+}
+#collaboration button{
+  background-color: rgb(203, 56, 55);
+}
+#whatis button{
+  background-color:rgb(49, 68, 88);
+}
+#collaboration, #intro, #whatis{
+  width:calc(50% - 40px);
+}
+/*spection specific considerations*/
+#section1{
+  background-color:rgb(32,101,136);
+  background-image:url(./images/city-scape.svg);
+  background-size:cover;
+}
+#section2{
+  background-color: rgb(39,53,71);
+}
+#section3{
+  background-color:rgb(32,101,136);
+  background-image:url(./images/forklift.svg);
+  background-size:cover;
+}
+#section4{
+  color:rgb(83, 88, 98);
+}
+#section4 h2, h3{
+  color:black;
+}
+#section2 ul{
+  line-height:50px;
+  list-style:none;
+}
+#section2 .happy-tree-friends{
+  width:50%;
+}
+#section2 li::before {
+  content: "•"; 
+  margin-right:20px;
+}
+#collaboration button, #collaboration p {
+  margin-left: 40px;
+}
+#section4 h2, #section4 h3, #section4 p{
+  text-align:center;
+}
+#section4 a{
+  color:rgb(208, 74, 73);
+}
+#features div{
+  margin: 0 2.5px;
+  width:calc(30% - 5px);
+  padding: 20px 40px;
+}
+#features div img{
+  display:block;
+}
